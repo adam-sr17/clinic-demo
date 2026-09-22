@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بخش رزرو انلاین</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+  <a href="index.html">خانه</a>
+  <a href="doctors.html">پزشکان</a>
+  <a href="appointment.html">رزرو نوبت</a>
+  <div class="clinic-logo">🏥 اعوان المصطفی</div>
+</nav>
+ <h1>رزرو نوبت آنلاین</h1>
+  <form id="appointment-form">
+  <label for="fullname">نام و نام خانوادگی:</label>
+  <input type="text" id="fullname" name="fullname">
+
+  <label for="phone">شماره تماس:</label>
+  <input type="text" id="phone" name="phone">
+
+  <label for="doctor">پزشک مورد نظر:</label>
+ <select id="doctor" name="doctor">
+  <option value="">انتخاب کنید</option>
+</select>
+
+  <label for="date">تاریخ مورد نظر:</label>
+  <input type="date" id="date" name="date">
+
+  <button type="submit">ثبت نوبت</button>
+</form>
+<p id="appointment-result"></p>
+<script src="script.js"></script>
+</body>
+</html>

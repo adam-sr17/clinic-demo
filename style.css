@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #0d7377;
+  --primary-dark: #0a5a5d;
+  --primary-light: #e0f2f1;
+  --accent-color: #14a3a8;
+  --text-color: #263238;
+  --text-muted: #607d8b;
+  --bg-color: #f5f9fa;
+  --white: #ffffff;
+  --border-color: #d0e0e0;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(13, 115, 119, 0.08);
+}
+body {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d2f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 30px;
+}
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.doctor-card {
+  background-color: var(--primary-light);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.doctor-card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+@media (max-width: 600px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+#appointment-result {
+  text-align: center;
+  font-weight: bold;
+}
+button, input, textarea, select {
+  font-family: inherit;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.service-card {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  padding: 25px 15px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  color: var(--primary-color);
+  margin: 10px 0 5px;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
