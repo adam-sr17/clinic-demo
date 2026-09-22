@@ -1,6 +1,6 @@
 const API_URL = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
   ? "API_URL"
-  : "PLACEHOLDER";
+  : "https://clinic-demo-backend.onrender.com";
 const doctorSelect = document.getElementById("doctor");
 
 fetch("API_URL/doctors")
