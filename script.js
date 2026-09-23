@@ -1,9 +1,11 @@
-const API_URL = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
-  ? "API_URL"
-  : "https://clinic-demo-backend.onrender.com";
+const API_URL =
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : "https://clinic-demo-backend.onrender.com";
 const doctorSelect = document.getElementById("doctor");
 
-fetch("API_URL/doctors")
+fetch(API_URL + "/doctors")
   .then(function (response) {
     return response.json();
   })
@@ -40,7 +42,7 @@ appointmentForm.addEventListener("submit", function (event) {
     return;
   }
 
-  fetch("API_URL/appointments", {
+  fetch(API_URL + "/appointments", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ fullname: fullname, phone: phone, doctor: doctor, date: date })
