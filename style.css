@@ -149,3 +149,44 @@ button, input, textarea, select {
     grid-template-columns: 1fr;
   }
 }
+#login-section {
+  max-width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+#login-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+#login-section button {
+  width: 100%;
+}
+
+#appointments-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.appointment-item {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: var(--shadow);
+}
+
+.appointment-item h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}

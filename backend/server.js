@@ -39,6 +39,17 @@ app.get("/appointments", function (req, res) {
   res.json(appointments);
 });
 
+const ADMIN_PASSWORD = "clinic2026";
+
+app.post("/admin/login", function (req, res) {
+  const password = req.body.password;
+
+  if (password === ADMIN_PASSWORD) {
+    res.json({ success: true });
+  } else {
+    res.json({ success: false, message: "رمز عبور اشتباه است" });
+  }
+});
 app.listen(port, function () {
   console.log("سرور روی پورت " + port + " در حال اجراست");
 });

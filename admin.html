@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل مدیریت درمانگاه</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-section">
+    <h2>ورود مدیر</h2>
+    <input type="password" id="admin-password" placeholder="رمز عبور" autocomplete="new-password">
+    <button id="login-btn" class="btn-primary">ورود</button>
+    <p id="login-result"></p>
+  </div>
+
+  <div id="appointments-section" style="display: none;">
+    <h2>لیست نوبت‌های ثبت‌شده</h2>
+    <div id="appointments-list"></div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
